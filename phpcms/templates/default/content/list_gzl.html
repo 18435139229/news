@@ -1,0 +1,68 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $v}
+<div class="coreDiv">
+      <div id="core"> 
+　      <div class="no1_main">
+        <div class="no1_main1">
+        <dl>
+        <dd>
+        <a href="#"><img src="{$v[thumb]}"></a></dd>
+          <dt><a href="{$v[url]}" style="color:white;">{$v[text1]}</a></dt>
+        </dl>
+        </div>
+      <div class="no1_main2">&nbsp;</div>
+      <div class="no1_main3">
+    <dl>
+     <dd>
+        <a href="#"><img src="{$v[img2]}"></a></dd>
+      <dt>
+        <a href="#">{$v[text1]}</a></dt>
+    </dl>
+      </div>
+      <div class="no1_main4">&nbsp;</div>
+      <div class="no1_main5">
+    <dl>
+      <dd>
+        <a href="#"><img src="{$v[img3]}"></a></dd>
+      <dt>
+        <a href="../shipin/shipin.html" style="color:white;">{$v[text1]}</a></dt>
+    </dl>
+  </div>
+  <div class="no1_main6">
+    &nbsp;</div>
+  <div class="no1_main7">
+    <div class="no1_main7_dl">
+      <dl>
+        <dd><a href="#"><img src="{$v[img4]}"></a></dd>
+        <dt><a href="#">{$v[text]}</a></dt>
+      </dl>
+      <dl>
+        <dd><a href="#"><img src="{$v[img5]}"></a></dd>
+        <dt><a href="#">{$v[text4]}</a></dt>
+      </dl>
+      <dl>
+        <dd><a href="#"><img src="{$v[img6]}"></a></dd>
+        <dt><a href="#">{$v[text2]}</a></dt>
+      </dl>
+      <dl>
+        <dd><a href="#"><img src="{$v[img7]}"></a></dd>
+        <dt><a href="#">{$v[text3]}</a></dt>
+      </dl>
+    </div>
+  </div>
+  <div class="main_bottom">
+    <ul>
+      <li><a href="gzl.html">{$v[text5]}</a></li>
+      <li><a href="gzl.html">{$v[text6]}</a></li>
+      <li><a href="gzl.html">{$v[text5]}</a></li>
+      <li><a href="gzl.html">{$v[text6]}</a></li>
+      <li><a href="gzl.html">{$v[text5]}</a></li>
+      <li><a href="gzl.html">{$v[text6]}</a></li>
+    </ul>
+  </div>
+   </div>
+ </div>
+        {/loop}
+{/pc}
+{template "content","footer"}

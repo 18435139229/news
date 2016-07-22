@@ -1,0 +1,16 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $v}
+<div class="clear1"></div>
+    <div class="clear1"></div>
+    <div class="coreDiv">
+     <div style="text-align:center">
+      <img src="{$v[thumb]}" usemap="#Map" align="absmiddle" border="0">
+        <map name="Map" id="Map">
+        <area shape="rect" coords="272,260,441,304" href="">
+        </map>
+     </div>
+    </div>
+        {/loop}
+{/pc}
+{template "content","footer"}

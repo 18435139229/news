@@ -1,0 +1,103 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $key $v}
+<div class="coreDiv">
+      <div class="aboutus_ad">
+        <div class="aboutus_png">
+          <ul id="contain">
+            <li><a rel="#kscc" href="javascript:void(0);">{$v[text1]}</a></li>
+            <li><a rel="#gsjj" href="javascript:void(0);">{$v[text8]}</a></li>
+            <li><a rel="#zxzx" href="javascript:void(0);">{$v[text12]}</a></li>
+            <li><a rel="#ppry" href="javascript:void(0);">{$v[text14]}</a></li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+      <div class="aboutus_content">
+        <div class="aboutus_title" id="kscc">{$v[text1]}<span>{$v[text]}</span></div>
+        <div class="clear1"></div>
+        <div class="aboutus_info">
+         <div class="aboutus_info_1">
+             <div class="aboutus_info_1_l">
+               <em><img src="{$v[img2]}"></em>
+               <em style="display: none;"><img src="/images/pic2a.jpg"></em>
+              <em style="display: none;"><img src="/images/pic3a.jpg"></em>
+              <em style="display: none;"><img src="/images/pic4a.jpg"></em>
+              <em style="display: none;"><img src="/images/pic5a.jpg"></em>
+              <em style="display: none;"><img src="/images/pic6a.jpg"></em>
+            </div>
+          </div> 
+          <div class="clear"></div>
+            <div class="aboutus_info_2">
+              <ul>
+                <li class="show"><a href="{$v[url]}">{$v[text4]}</a></li>
+                <li><a href="{$v[url]}">{$v[text2]}</a></li>
+                <li><a href="{$v[url]}">{$v[text3]}</a></li>
+                <li><a href="{$v[url]}">{$v[text5]}</a></li>
+                <li><a href="{$v[url]}">{$v[text6]}</a></li>
+                <li><a href="{$v[url]}">{$v[text7]}</a></li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear1"></div>
+          <div class="aboutus_title" id="zxzx">{$v[text8]}<span>{$v[text9]}</span></div>
+          <div class="clear1"></div>
+          <div class="honor_box">
+            <div style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 310px;" class="honor_in" id="box1">
+              <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 62px; top: 0px;">
+                <li style="overflow: hidden; float: none; width: 628px; height: 30.0833px;">
+                  <span>{$v[text10]}</span>
+                    <a href="{$CATEGORYS[86][url]}" target="_blank" title="{$texv[t11]}">{$v[text11]}</a></li> 
+                <li style="overflow: hidden; float: none; width: 628px; height: 30.0833px;">
+                  <span>{$v[text10]}</span><a href="{$CATEGORYS[87][url]}" target="_blank" title="{$v[text14]}">{$v[text14]}</a></li> 
+              </ul>
+            </div>
+            <div class="honor_menu">
+              <a href="{$v[url]}" id="prev1"><img src="{$v[img3]}"></a><a href="{$v[url]}" id="next1"><img src="{$v[img4]}"></a>
+            </div>
+          </div>
+         <div class="clear1"></div>
+           <div class="aboutus_title" id="dsj">{$v[text12]}<span>{$v[text13]}</span></div>
+          <div class="clear1"></div>
+          <div class="honor_box">
+            <div style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 310px;" class="honor_in" id="box1">
+              <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 62px; top: 0px;">
+                <li style="overflow: hidden; float: none; width: 628px; height: 30.0833px;">
+                  <span>{$v[text19]}</span>
+                    <a href="{$CATEGORYS[87][url]}" target="_blank" title="{$text11}">{$v[text8]}</a></li> 
+                <li style="overflow: hidden; float: none; width: 628px; height: 30.0833px;">
+                  <span>{$v[text20]}</span><a href="{$CATEGORYS[88][url]}" target="_blank" title="{$text8}">{$v[text21]}</a></li> 
+              </ul>
+            </div>
+            <div class="honor_menu">
+              <a href="{$url}" id="prev1"><img src="{$v[img3]}"></a><a href="{$url}" id="next1"><img src="{$v[img4]}"></a>
+            </div>
+          </div>
+          <div class="clear1"></div> 
+          <div class="aboutus_title" id="ppry">{$v[text14]}<span>Honor</span></div>
+          <div class="clear1"></div>
+          <div class="honor_box">
+            <div style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 310px;" class="honor_in" id="box">
+              <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 62px; top: 0px;">
+                <li style="overflow: hidden; float: none; width: 628px; height: 30.0833px;">
+                  <span>{$v[text16]}</span>
+                  <a href="{$CATEGORYS[86][url]}" target="_blank" title="{$tev[xt1]}">{$v[text1]}</a></li> 
+                <li style="overflow: hidden; float: none; width: 628px; height: 30.0833px;">
+                  <span>{$v[text17]}</span>
+                  <a href="{$CATEGORYS[90][url]}" target="_blank" title="">{$v[text18]}</a>   
+               </ul>
+              </div>
+              <div class="honor_menu">
+                <a href="{$v[url]}" id="prev"><img src="{$v[img3]}"></a><a href="{$v[url]}" id="next"><img src="{$v[img4]}"></a>
+              </div>
+            </div>
+            <div class="clear1"></div>
+          </div>
+        </div>
+        {/loop}
+{/pc}
+{template "content","footer"}

@@ -1,0 +1,9 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $v}
+<div class="news_infor" style=" text-align:center;">
+       <a href="{$v[url]}" target="_blank"><img alt="" src="{$v[thumb]}"></a>
+    </div>
+        {/loop}
+{/pc}
+{template "content","footer"}

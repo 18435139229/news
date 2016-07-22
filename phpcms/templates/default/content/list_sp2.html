@@ -1,0 +1,99 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $v}
+<div class="coreDiv">
+     <div class="content">
+      <div class="sites">
+          {$v[text10]}
+          <span>{$v[text9]}</span>
+        </div>
+        <div class="clear1"></div>
+          <div class="videos_content">
+            <div class="videos_left">
+              <div class="youkus1">
+        <p>
+              <embed allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://player.youku.com/player.php/sid/XNTc4NzM1MTc2/v.swf" type="application/x-shockwave-flash" height="400" align="middle" width="480">
+              </p>
+            </div>
+            </div>              
+            <div class="videos_right">
+              <div class="right_qie_cen"></div>
+                <div class="right_qie1">
+                  <div class="btn_up"><a href="javascript:void(0);" id="prev2"></a></div>
+                    <div style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 270px;" class="qie_middle" id="box">
+                      <ul style="margin: 0px; padding: 0px; position:relative;list-style-type: none; z-index:1; height: 1080px; top:0px;">
+                        <li style="overflow: hidden; float: none; width: 236px; height: 80px;">
+                          <a href="" title="{$v[text1]}"> 
+                            <img src="{$v[img3]}" height="69px" width="116px">
+                          </a>
+                           <p>
+                             <span>{$v[text1]}</span><br>
+                             <a href="" title="{$v[text1]}"> &gt;&gt; {$v[text8]}</a>
+                           </p>
+                        </li>
+                        <li style="overflow: hidden; float: none; width: 236px; height: 80px;">
+                          <a href="" title="{$v[text1]}"> <img src="{$v[img3]}" height="69px" width="116px"></a>
+                          <p>
+                            <span>{$v[text]}</span><br>
+                            <a href="" title="{$v[text]}"> &gt;&gt; {$v[text8]}</a>
+                          </p>
+                        </li>
+                        <li style="overflow: hidden; float: none; width: 236px; height: 80px;">
+                           <a href="" title="{$v[text4]}"> 
+                            <img src="{$v[img3]}" height="69px" width="116px">
+                           </a>
+                           <p>
+                            <span>{$v[text4]}</span><br>
+                            <a href="" title="{$v[text4]}"> &gt;&gt; {$v[text8]}</a>
+                           </p>                                                            
+                        </li>
+                        <li style="overflow: hidden; float: none; width: 236px; height: 80px;">
+                          <a href="" title="{$v[text2]}"> 
+                            <img src="{$v[img3]}" height="69px" width="116px"></a>
+                            <p>
+                               <span>{$v[text2]}</span><br>
+                               <a href="" title="{$v[text2]}"> &gt;&gt; {$v[text8]}</a>
+                            </p>
+                        </li>
+                        <li style="overflow: hidden; float: none; width: 236px; height: 80px;">
+                          <a href="" title="{$v[text3]}">
+                           <img src="{$v[img3]}" height="69px" width="116px">
+                          </a>
+                          <p>
+                            <span>{$v[text3]}</span><br>
+                            <a href="" title="{$v[text3]}"> &gt;&gt; {$v[text8]}</a>
+                          </p>
+                        </li>
+                        <li style="overflow: hidden; float: none; width: 236px; height: 80px;">
+                          <a href="" title="{$v[text5]}"> 
+                            <img src="{$v[img3]}" height="69px" width="116px"></a>
+                            <p>
+                              <span>{$v[text5]}</span><br>
+                              <a href="" title="{$v[text5]}"> &gt;&gt; {$v[text8]}</a>
+                            </p>
+                        </li>
+                        <li style="overflow: hidden; float: none; width: 236px; height: 80px;">
+                               <a href="" title="{$v[text6]}"> <img src="{$v[img3]}" height="69px" width="116px"></a>
+                               <p><span>{$v[text6]}</span><br><a href="" title="{$v[text6]}"> &gt;&gt; {$v[text8]}</a></p>
+                        </li>
+                        <li style="overflow: hidden; float: none; width: 236px; height: 80px;">
+                           <a href="" title=" {$v[text7]}"> 
+                            <img src="{$v[img3]}" height="69px" width="116px"></a>
+                           <p><span> {$v[text7]}</span><br>
+                            <a href="" title=" {$v[text7]}"> &gt;&gt; {$v[text8]}</a>
+                           </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_down"><a href="javascript:void(0);" id="next2"></a></div>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        {/loop}
+{/pc}
+{template "content","footer"}

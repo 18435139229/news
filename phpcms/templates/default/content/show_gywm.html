@@ -1,0 +1,12 @@
+{template "content","header"}
+{pc:content action="content" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+<div class="coreDiv">
+      <div class="news_box">
+        <div class="news_title">{$title}</div>
+        <div class="news_infor">
+　        {$content}
+        </div>
+      </div>
+    </div>
+{/pc}
+{template "content","footer"}

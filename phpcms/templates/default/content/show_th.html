@@ -1,0 +1,37 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+<div class="coreDiv">
+      <div class="ad">
+         <a href="" target="_blank"><img src="{$thumb}" height="371" width="950"></a>
+       </div>
+      <div class="clear1"></div>
+        <div class="site">
+            <h2>{$title}</h2>
+      <div class="zhi">
+        <span><a href="{siteurl=($siteid)}">{$text3}</a></span>
+            <span> &nbsp;&gt;&nbsp;<a href="{$url}">{catpos($catid)}</a></span>
+            <!-- <span> &nbsp;&gt;&nbsp;<a href="{$url}">需求</a></span> -->
+      </div>                </div>
+          <div class="clear1"></div>
+          <div class="dl_content">
+              <div class="prolist">
+                 <a href="" target="_blank" title="{$v[catname]}"><img src="{$v[img2]}" height="200px"><br>
+
+                <span>{$text1}</span></a>
+                 <a href="" target="_blank" title="{$v[catname]}"><img src="{$v[img3]}" height="200px"><br>
+                  <span>{$text}</span></a>
+                  <a href="" target="_blank" title="{$v[catname]}"><img src="{$v[img4]}" height="200px"><br>
+                  <span>{$text4}</span></a>
+                  <a href="" target="_blank" title="{$v[catname]}"><img src="{$v[img5]}" height="200px"><br>
+                  <span>{$text2}</span></a>  
+                </div>
+            
+               <div class="clear1"></div>
+               <div class="links">
+                         <a href="{siteurl=($siteid)}">{$text3}</a><a href="{$v[url]}"> {$text5}</a><a href="{$v[url]}"> {$text6}</a> {$text7}  
+                         </div>
+          
+            </div>
+        </div>
+{/pc}
+{template "content","footer"}

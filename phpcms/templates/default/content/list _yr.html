@@ -1,0 +1,14 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $v}
+<div class="coreDiv">
+   <div style="text-align:center">
+   <img src="{$v[thumb]}" align="absmiddle"><img src="{$v[img2]}" align="absmiddle"><img src="{$v[img3]}" align="absmiddle"><img src="{$v[img4]}" align="absmiddle"><img src="{$v[img5]}" align="absmiddle">
+   <img src="{$v[img6]}" align="absmiddle"><img src="{$v[img7]}" align="absmiddle"><img src="{$v[img8]}" align="absmiddle"><img src="{$v[img9]}" align="absmiddle"><img src="{$v[img10]}" align="absmiddle">
+   <img src="{$v[img11]}" align="absmiddle"><img src="{$v[img12]}" align="absmiddle">
+ </div>
+  </div>
+
+        {/loop}
+{/pc}
+{template "content","footer"}

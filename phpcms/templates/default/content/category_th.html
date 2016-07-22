@@ -1,0 +1,40 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $v}
+<div class="coreDiv">
+      <div class="ad">
+         <a href="" target="_blank"><img src="{$v[thumb]}" height="371" width="950"></a>
+       </div>
+      <div class="clear1"></div>
+            
+        <div class="site">
+            <h2>{$v[title]}</h2>
+      <div class="zhi">
+        <span><a href="{siteurl=($siteid)}">{$v[text3]}</a></span>
+            <span> &nbsp;&gt;&nbsp;<a href="{$v[url]}">{catpos($catid)}</a></span>
+           <!--  <span> &nbsp;&gt;&nbsp;<a href="{$v[url]}">需求</a></span> -->
+      </div>                </div>
+          <div class="clear1"></div>
+          <div class="dl_content">
+              <div class="prolist">
+                <a href="" target="_blank" title="{$v[catname]}"><img src="{$v[img2]}" height="200px"><br>
+
+                <span>{$v[text1]}</span></a>
+                 <a href="" target="_blank" title="{$v[catname]}"><img src="{$v[img3]}" height="200px"><br>
+                  <span>{$v[text]}</span></a>
+                  <a href="" target="_blank" title="{$v[catname]}"><img src="{$v[img4]}" height="200px"><br>
+                  <span>{$v[text4]}</span></a>
+                  <a href="" target="_blank" title="{$v[catname]}"><img src="{$v[img5]}" height="200px"><br>
+                  <span>{$v[text2]}</span></a>   
+                </div>
+            
+               <div class="clear1"></div>
+               <div class="links">
+                         <a href="{siteurl=($siteid)}">{$v[text3]}</a><a href="{$v[url]}"> {$v[text5]}</a><a href="{$v[url]}"> {$v[text6]}</a> {$v[text7]} 
+                         </div>
+          
+            </div>
+        </div>
+        {/loop}
+{/pc}
+{template "content","footer"}

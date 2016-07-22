@@ -1,0 +1,77 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $key $v}
+<div class="coreDiv">
+           <div class="tian_box_top"><div class="tian_box_top_p"><a href="">{$v[title]}</a></div>
+                        <img src="{$v[thumb]}" height="361">
+                       
+                    
+                </div>
+                <div class="clear"></div>
+            <div id="core">
+                
+                <div class="kv loadScript box:js:home">
+                <div class="clear2"></div>
+                <div class="tian_box2"><div class="box_top">
+                      <div class="box_top_left"><img src="{$v[img2]}" height="308px" width="359px">
+                                            </div>
+                        <div class="box_top_right" style="position:relative;">
+                         <div style="dsplay: none;" class="pro_urls" id="buylink">
+                                                      
+                            </div>
+                        <div class="box_bland" style="margin-top:-20px;"><img src="{$v[img3]}" height="90"></div>
+                            <div class="key_box">
+                              <a href="javascript:void(0);">{$v[text1]}</a><a href="javascript:void(0);">{$v[text]}</a><a href="javascript:void(0);">{$v[text4]}</a><a href="javascript:void(0);">{$v[text2]}</a><a href="javascript:void(0);">{$v[text3]}</a>
+                            </div>
+                            <ul style="padding:0px  0px 20px 10px;">
+                                <li class="pro_infor">
+                                {$v[text5]}         
+                                </li>
+                                
+                            </ul>
+                            
+                            <a href="javascript:void(0);" id="buybutton"><img src="{$v[img4]}" height="28" width="113"></a>
+                            
+                          </div>
+                    </div>
+                    <div class="box_footer"><img src="{$v[img5]}" usemap="#Map" border="0" height="43" width="888">
+                        <map name="Map" id="Map">
+                            <area shape="rect" coords="15,9,177,35" href="javascript:void(0);">
+                            <area shape="rect" coords="194,7,314,39" href="#cpjs">
+                            <area shape="rect" coords="338,6,456,37" href="#gxsm">
+                            <area shape="rect" coords="480,7,600,37" href="#jddp">
+                            <area shape="rect" coords="623,8,743,39" href="#mxtj">
+                            <area shape="rect" coords="758,6,879,38" href="#pzbz">
+                        </map>
+                    </div>
+                    <div class="pro_infor1">
+                      <div class="pro_title1" id="cpjs">
+  &nbsp;</div>
+<p>
+  <img alt="" src="{$v[img6]}" style="text-align: center; width: 940px; height: 375px;"><img alt="" src="{$v[img7]}" style="text-align: center; width: 940px; height: 444px;"></p>
+<div class="pro_title2" id="gxsm">
+  &nbsp;</div>
+<p>
+  <img alt="" src="{$v[img9]}" style="text-align: center; width: 940px; height: 525px;"><img alt="" src="{$v[img10]}" style="text-align: center; width: 940px; height: 637px;"></p>
+<div class="pro_title3" id="jddp">
+  &nbsp;</div>
+<p>
+  <img alt="" src="{$v[img11]}" style="text-align: center; width: 940px; height: 656px;"></p>
+<div class="pro_title4" id="mxtj">
+  &nbsp;</div>
+<p>
+  <img alt="" src="{$v[img12]}" style="text-align: center; width: 940px; height: 310px;"></p>
+<div class="pro_title5" id="pzbz">
+  &nbsp;</div>
+<p>
+  <img alt="" src="{$v[img13]}" style="text-align: center; width: 940px; height: 481px;"></p>
+
+                    </div>
+                </div> 
+                    
+                </div>
+            <div class="maskDiv"></div></div>
+        </div>
+        {/loop}
+{/pc}
+{template "content","footer"}

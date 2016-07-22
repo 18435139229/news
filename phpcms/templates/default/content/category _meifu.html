@@ -1,0 +1,99 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" order="listorder ASC" num="1" moreinfo="1"}
+{loop $data $v}
+<div class="coreDiv">
+      <div class="content">
+        <div class="sites">
+          {$v[title]}
+          <span>{$v[text1]}</span>
+        </div>
+        <div class="clear1"></div>
+       <div class="videos_content">
+         <div class="videos_left">
+            <div class="youkus"></div>
+         </div>
+         <div class="videos_right">
+            <div class="videos_right_cen"></div>
+            <div class="videos_right1">
+              <div class="right_title">
+                <h2>{$v[text]}</h2>
+              </div>
+              <div class="clear1"></div>
+              <div class="right_qie">
+                <div class="right_qie_img">
+                  <img src="{$v[thumb]}" height="211px" width="162px">
+                </div>
+                <div class="right_qie_tag">
+                  {$v[content]}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear1"></div>
+          <div class="clear1"></div>
+          <div class="clear1"></div>
+          <div class="clear1"></div>
+          <div class="clear1"></div>
+          <div class="videos_icon">
+            <div class="btn_left"><a href="{$v[url]}" id="prev3"></a></div>
+            <div class="videos_icon_center">
+              <div class="videos_icon_center1" id="videos">
+                <ul></ul>
+              </div>
+            </div>
+            <div class="btn_right"><a href="{$v[url]}" id="next3"></a></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="clear1"></div>
+        <div class="clear1"></div>
+        <div class="meili_box">
+          <div class="news_title">{$v[text4]}</div>
+          <div class="meili_news">
+            <div class="meili_news_l">
+              <div class="meili_news_title">
+                <h2>{$v[text2]}</h2><span><a href="">{$v[text3]}</a></span>
+              </div>
+            <div class="clear"></div>
+              <ul>
+                <li><a href="{$CATEGORYS[91][url]}" target="_blank">{$v[text5]}</a> </li>
+
+                <li><a href="{$CATEGORYS[92][url]}" target="_blank">{$v[text6]}</a> </li>
+              </ul>
+            </div>
+          <div class="meili_news_r">
+            <div class="meili_news_r_l">
+              <div class="meili_news_title">
+                <h2>{$v[text7]}</h2><span><a href="">{$v[text3]}</a></span>
+              </div>
+            <div class="clear"></div>
+             <ul>
+              <li><a href="{$CATEGORYS[93][url]}" target="_blank">{$v[text8]}</a></li>
+              <li><a href="{$CATEGORYS[94][url]}" target="_blank">{$v[text9]}</a></li>
+              <li><a href="{$CATEGORYS[95][url]}" target="_blank">{$v[text10]}</a></li>
+             </ul>
+            </div>
+            <div class="meili_news_r_r">
+              <div class="meili_news_title">
+                <h2>{$v[text11]}</h2><span><a href="">{$v[text3]}</a></span>
+              </div>
+              <div class="clear"></div>
+            <ul>
+              <li><a href="{$CATEGORYS[96][url]}" target="_blank">{$v[text12]}</a> </li>
+              <li><a href="{$CATEGORYS[97][url]}" target="_blank">{$v[text13]}</a> </li>
+              <li><a href="{$CATEGORYS[98][url]}" target="_blank">{$v[text14]}</a> </li>
+              <li><a href="{$CATEGORYS[99][url]}" target="_blank">{$v[text15]}</a> </li>
+              <li><a href="{$CATEGORYS[100][url]}" target="_blank">{$v[text16]}</a> </li>
+              <li><a href="{$CATEGORYS[101][url]}" target="_blank">{$v[text17]}</a> </li>
+            </ul>
+          </div>
+         </div>
+         <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+       </div>
+      </div> 
+    </div>
+        {/loop}
+{/pc}
+{template "content","footer"}
