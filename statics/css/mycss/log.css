@@ -1,0 +1,162 @@
+body{
+	background:#f6f6f6;
+}
+.log-top{
+	width: 100%;
+	height: .96rem;
+	background:#333;
+    position: relative;
+    padding: .2rem .4rem;
+}
+
+.log-top span{
+	color: #fff;
+	display: block;
+	width: .5rem;
+	height: .5rem;
+	text-align: center;
+	line-height: .5rem;
+	font-size: .5rem;
+	float: left;
+}
+.log-top i{
+	color:#fff9fa;
+	display: block;
+	width: 1.5rem;
+	height: .5rem;
+	font-size: .3rem;
+	text-align: center;
+	line-height: .6rem;
+	margin-left: .48rem;
+	font-style: normal;
+}
+/*用户登录*/
+.log-box{
+	width: 6.68rem;
+	height: 2.32rem;
+	border-radius: .05rem;
+	background: #fff;
+	margin:0 auto;
+	border:1px solid #f1f1f1;
+	margin-top:.32rem;
+	padding: .38rem .22rem ;
+	box-shadow: 1px 1px 1px #ccc;
+}
+.log-box .userbox{
+     width: 100%;
+     height:50%;
+     margin-bottom: .24rem;
+}
+.log-box div span{
+	font-size: .3rem;
+}
+.log-box div input{
+	width: 5.66rem;
+	height: .58rem;
+    border:none;
+    color:#cacaca;
+    font-size: .3rem;
+}
+.log-box .userbox input{
+	border-bottom:1px solid #cacaca;
+
+	box-sizing:border-box;
+
+}
+/*登录按钮*/
+.log-btn{
+   width: 6.68rem;
+   height: .8rem;
+   margin:0 auto;
+   margin-top: .24rem;
+
+}
+.log-btn button{
+   width: 6.68rem;
+   height: .8rem; 
+   border:none;
+   background: #fff;
+   border:1px solid #eaeaea;
+   box-shadow: 1px 1px 1px #ccc;
+   font-size: .3rem;
+   color:#cacaca;
+}
+
+.deng{
+	display: block;
+	width: 6.68rem;
+	height:.4rem;
+	margin:0 auto; 
+	color:#a9a9a9;
+	margin-top:.6rem;
+}
+/*登录方式*/
+.log-mean{
+	width: 6.68rem; 
+	height: 3.38rem;
+    background: #fff;
+    border:1px solid #eaeaea;
+    box-shadow: 1px 1px 1px #ccc;
+    font-size: .3rem;
+    color:#cacaca;
+    margin:0 auto;
+    margin-top: .15rem;
+    padding:.42rem .48rem;
+    /*background: red;*/
+    /*box-sizing:border-box;*/
+
+}
+.tubiao{
+    width: 100%;
+    height: 1.6rem;
+    /*border:1px solid red;*/
+    /*margin-bottom: .34rem;*/
+}
+.tubiao li{
+    width: 33.33333%;
+    height: 100%;
+    /*border:1px solid blue;*/
+    float: left;
+    color:#222;
+    text-align: center;
+    margin-right: 
+}
+/*S*/
+.tubiao li span:nth-child(1){
+	 display: block;
+     width: 100%;
+     height: 1.11rem;
+}
+.tubiao li span img{
+	/*width: 100%;*/
+	height: 100%;
+}
+/*.tubiao li:nth-child(1) span:nth-child(1){
+	background: url(../image/w1.png) no-repeat ;
+	background-size: 50%;  
+}*/
+.tubiao li span:nth-child(2){
+	display: block;
+	font-size: .22rem;
+   margin-top: .18rem;
+}
+.hengxian{
+	width: 100%;
+	height: .56rem;
+	margin: 0 auto;
+	margin-top: .34rem;
+	/*z-index: 2;*/
+	border-top: 1px solid #cacaca;
+
+}
+.hengxian span{
+	line-height: .70rem;
+}
+.hengxian span:nth-child(2){
+    color: #ea3834;	
+}
+.hengxian span:nth-child(3){
+	float: right;
+	transform:rotate(-90deg);
+	font-size: .18rem;
+}
